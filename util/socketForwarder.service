@@ -1,0 +1,10 @@
+[Unit]
+Description = socket forwarder service for wirex
+After = network.target
+
+[Service]
+WorkingDirectory = /home/SocketForwarder/bin
+ExecStart = /home/SocketForwarder/bin/socket-forwarding-server.sh 
+
+[Install]
+WantedBy = multi-user.target
